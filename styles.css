@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit');
 
 :root {
   --clr-white: hsl(0, 0%, 100%);
@@ -8,6 +8,7 @@
 }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Outfit', sans-serif;
@@ -28,8 +29,7 @@ body {
   text-align: center;
 }
 
-p {
-  font-size: 15px;
+.t400, .t700 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -37,33 +37,23 @@ p {
 .t400 {
   font-weight: 400;
   color:hsl(220, 15%, 55%);
+  font-size: 1rem;
 }
 
 .t700 {
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
-.card {
-  max-width: 200px;
+main {
+  max-width: 280px;
   background-color: var(--clr-white);
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 1rem;
+  text-align: center;
 }
 
-.card > img {
+main > img {
   width: 100%;
   border-radius: 0.5rem;
-}
-
-.attribution {
-  position: absolute;
-  bottom: 0.5rem;
-}
-
-@media screen and (min-width: 375px) {
-  /*  Mobile View  */
-}
-
-@media screen and (min-width: 1440px) {
-  /*  Desktop View  */
 }
